@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>GOODIE SERVER!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'proza';
+      scroll-behavior: smooth;
+      background: linear-gradient(to bottom, #AEE2FF, #ffffff);
+    }
+
+    :root {
+      --biru-pastel: #AEE2FF;
+      --kuning: #FFF172;
+      --kuning-tua: #FFE45C;
+      --hijau-pastel: #D4F8D4;
+      --putih: #ffffff;
+      --abu-muda: #f9f9f9;
+    }
+
+    header, section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--biru-pastel), var(--kuning));
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 6px;
+      text-decoration: none;
+      color: #333;
+      background-color: var(--kuning);
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a:hover {
+      background-color: var(--kuning-tua);
+    }
+
+    section {
+      min-height: 90vh;
+    }
+
+    /* PORTOFOLIO */
+    #portofolio {
+      background: linear-gradient(to bottom, #FFF172, #fffbe6);
+      padding: 40px 10px;
+      background-image: url('https://www.transparenttextures.com/patterns/skelatal-weave.png');
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 10px;
+      width: 240px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* VIDEOGRAFI */
+    .video-section {
+      margin-top: 40px;
+    }
+
+    .video-item {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      margin: 10px auto;
+      width: 250px;
+    }
+
+    .video-item a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    /* HOBI */
+    #hobi {
+      background: linear-gradient(to bottom, var(--hijau-pastel), #f0fff0);
+      padding-bottom: 40px;
+    }
+
+    .hobi-item {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .hobi-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    ul.pencapaian {
+      padding-left: 20px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: var(--biru-pastel);
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .btn-link:hover {
+      background-color: #90d8ff;
+    }
+
+    #kontak {
+      background-color: #ffffff;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <header id="beranda">
+    <img src="bagus poto.jpeg" alt="Foto Profil">
+    <h1>hallo! BAGUS INDRA KUSUMA here</h1>
+    <p>Seorang mahasiswa Pendidikan Multimedia di Universitas Pendidikan Indonesia,</p>
+	<p>sebagai seorang introvert yang yang memiliki mbti INTJ dan suka menciptakan sesuatu di dunia kreatif, saya juga memiliki beberapa hasil pengerjaan saya mulai dari desain grafis, video, dan hasil jepretan dari kamera.</p>
+	<p>DIBAWAH INI ADALAH HALAMAN PORTOFOLIO SAYA!</p>
+    <nav>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#kontak">Kontak</a>
+      <a href="https://www.instagram.com/goodie_sign?igsh=dG9uaXBjcmZ4b3Nv" target="_blank">IG Portofolio</a>
+      <a href="https://www.instagram.com/bagus_i.k?igsh=MXQ1bm1pbmVlaXR5Nw==" target="_blank">IG Pribadi</a>
+    </nav>
+  </header>
+
+  
+  <section id="portofolio">
+    <h2>Desain & Fotografi</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="makanan.png" alt="Desain 1">
+        <p>Poster Promosi makanan</p>
+      </div>
+      <div class="gallery-item">
+        <img src="feeds.png" alt="Desain 2">
+        <p>Desain Feed Instagram</p>
+      </div>
+      <div class="gallery-item">
+        <img src="wisuda.png" alt="Foto 1">
+        <p>Foto Dokumentasi Wisuda</p>
+      </div>
+      <div class="gallery-item">
+        <img src="street.png" alt="Foto 2">
+        <p>Street Photography Bumi Siliwangi</p>
+      </div>
+    </div>
+
+    <div class="video-section">
+      <h3>Videografi</h3>
+      <div class="video-item">
+        <p>Kumpulan Konten Video</p>
+        <a href="https://drive.google.com/drive/folders/1CrTAW1wCcw_pItfLG9PdWNhe0fMaJ2oG" target="_blank">Tonton Video</a>
+      </div>
+	  
+    </div>
+  </section>
+
+  
+  <section id="hobi">
+    <h2>Hobi Dance K-Pop</h2>
+    <div class="hobi-item">
+      <p>Selain aktif sebagai mahasiswa dan desain grafis, saya juga aktif dalam dunia dance cover K-POP dan mengikuti beberapa komunitas di Kota Bandung. Saya juga membuat beberapa konten video dance cover K-pop, tampil di berbagai acara di berbagai kota, dan mengikuti berbagai kompetisi bergengsi untuk menoreh prestasi bersama grup.</p>
+      <p>Menurut saya dance tidak sekedar hobi, dance bisa saya jadikan sebagai pelarian atas beratnya dunia kuliah dan dunia kerja, apalagi kalau dapet uang haha!</p>
+      <h3>Pencapaian</h3>
+      <ul class="pencapaian">
+        <li>Juara 4 Nasional Korean Cover Dance Festival 2024</li>
+        <li>Juara 3 Lomba Virtual Dance 2023</li>
+        <li>Juara 1 Dance Cover Rookie Kota Bandung 2023</li>
+      </ul>
+      <img src="kcdf.jpeg" alt="Foto Juara">
+      <p><a class="btn-link" href="https://youtu.be/41Qo133bp70?si=yTpi7BR2TkD0R6n2" target="_blank">Lihat Video Dance Cover</a></p>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: bagus.ind.ksm7@email.com</p>
+    <p>Alamat: Gempol Sari no.94 Kel. Gempol Sari, Kota Bandung, Jawa Barat</p>
+    <a class="btn-link" href="#beranda">Kembali ke Atas</a>
+    <footer>
+      <p>&copy; 2025 Portofolio Bagus Indra Kusuma</p>
+    </footer>
+  </section>
+
+</body>
+</html>
